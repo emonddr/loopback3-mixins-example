@@ -1,0 +1,25 @@
+{
+    "name": "Book",
+    "properties": {
+      "title": {
+        "type": "string",
+        "required": true
+      },
+      "description": {
+        "type": "string"
+      },
+      "isbn": {
+        "type": "string",
+        "required": true
+      }
+
+    },
+    "mixins": {
+        "Category": true,
+        "FindByTitle": {
+            "returnArgumentName": "books"
+        }
+      }
+    
+  }
+  
